@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="552.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.prestamoobjetos.controller.InventarioController">
+   <children>
+      <SplitPane layoutX="6.0" layoutY="5.0" prefHeight="574.0" prefWidth="742.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="740.0">
+               <children>
+                  <SplitPane dividerPositions="0.32368896925858953, 0.6690777576853526" layoutX="8.0" layoutY="31.0" orientation="VERTICAL" prefHeight="533.0" prefWidth="724.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextArea fx:id="txtObjetosDisponibles" editable="false" layoutX="195.0" layoutY="12.0" prefHeight="147.0" prefWidth="514.0" />
+                              <Label layoutX="19.0" layoutY="75.0" text="Lista de Objetos Disponibles:">
+                                 <font>
+                                    <Font name="AR JULIAN" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextArea fx:id="txtObjetosPrestados" editable="false" layoutX="194.0" layoutY="14.0" prefHeight="147.0" prefWidth="514.0" />
+                              <Label layoutX="20.0" layoutY="80.0" text="Lista de Objetos Prestados:">
+                                 <font>
+                                    <Font name="AR JULIAN" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                        <AnchorPane prefHeight="274.0" prefWidth="722.0">
+                           <children>
+                              <Label layoutX="22.0" layoutY="69.0" text="Lista de Objetos Agotados:">
+                                 <font>
+                                    <Font name="AR JULIAN" size="12.0" />
+                                 </font></Label>
+                              <TextArea fx:id="txtObjetosAgotados" editable="false" layoutX="194.0" layoutY="13.0" prefHeight="147.0" prefWidth="514.0" />
+                              <Label layoutX="35.0" layoutY="99.0" text="Cantidad de unidades &#10;menor o igual a 5" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Label layoutX="333.0" layoutY="7.0" text="Inventario">
+                     <font>
+                        <Font name="AR JULIAN" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSalir" layoutX="680.0" layoutY="4.0" mnemonicParsing="false" onAction="#salirLoginAction" text="Salir" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
